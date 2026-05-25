@@ -1,0 +1,24 @@
+# Backend .gitignore
+
+# Environment variables
+.env
+.env.*
+
+node_modules/
+logs/
+*.log
+
+dist/
+build/
+
+# IDE/editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
