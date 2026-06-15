@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from '../features/auth/pages/Login';
 import Register from '../features/auth/pages/Register';
 import Landing from '../features/landing/Landing';
-import Home from "../features/home/Home.jsx"
+import Home from "../features/home/pages/Home.jsx"
 import ProtectedRoutes from './ProtectedRoutes.jsx';
 
 const AppRoutes = () => {
@@ -17,4 +17,4 @@ const AppRoutes = () => {
   )
 }
 
-export default AppRoutes
+export default AppRoutes;

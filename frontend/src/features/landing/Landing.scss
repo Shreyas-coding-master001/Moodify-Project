@@ -1,0 +1,180 @@
+.landing {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  font-family: Inter, sans-serif;
+}
+
+.landing button:active{
+    scale: 0.95;
+}
+
+.gradient {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  filter: blur(150px);
+  border-radius: 50%;
+}
+
+.gradient-1 {
+  background: #8b5cf6;
+  top: -150px;
+  left: -150px;
+}
+
+.gradient-2 {
+  background: #ec4899;
+  top: -100px;
+  right: -100px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.hero-left span {
+  color: #a855f7;
+}
+
+.hero-left p {
+  margin-top: 1.5rem;
+  opacity: 0.8;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-btn {
+  background: #8b5cf6;
+  border: none;
+  color: white;
+  padding: 14px 26px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #ffffff30;
+  color: white;
+  padding: 14px 26px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.music-card {
+  width: 340px;
+  padding: 25px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mood {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.song {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cover {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,#8b5cf6,#ec4899);
+}
+
+.play-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.cards,
+.emotion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+
+.card,
+.emotion-card,
+.demo-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.card span {
+  font-size: 3rem;
+}
+
+.demo-card {
+  max-width: 500px;
+  margin: auto;
+}
+
+.emoji {
+  font-size: 5rem;
+  margin: 20px 0;
+}
+
+.confidence {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+footer {
+  padding: 60px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer p {
+  margin-top: 10px;
+  opacity: 0.7;
+}

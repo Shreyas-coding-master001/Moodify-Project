@@ -7,7 +7,6 @@ function authHooks(called) {
     useEffect(() => {
         if(called) {
             context.getUserData();
-            console.log("Context Data: ",context.data);
         }
     }, []);
 
