@@ -16,7 +16,7 @@ export function SongContextProvider({ children }){
        if (allSongs.length === 0) return;
 
         const nextIdx =
-            current_idx >= allSongs.length 
+            current_idx >= allSongs.length - 1 
                 ? 0
                 : current_idx + 1;
 
