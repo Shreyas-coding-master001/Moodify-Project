@@ -1,0 +1,245 @@
+.home-page {
+  padding: 24px;
+  height: 95vh;
+  color: #1f2937;
+  background: linear-gradient(to top left, rgb(0, 69, 0), black);
+  border-radius: 1rem;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.top-section h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: rgb(207, 207, 207);
+}
+
+.top-section button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.main-content .Face-Dectection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.main-content .Face-Dectection h2 {
+  font-size: 2.5rem;
+  color: #e0f2fe;
+}
+.main-content .Face-Dectection h2 span {
+  color: rgb(0, 157, 255);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.main-content .Face-Dectection video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+.main-content .Face-Dectection .all-bottom {
+  display: flex;
+  gap: 1rem;
+}
+.main-content .Face-Dectection .all-bottom button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: blueviolet;
+  font-weight: 700;
+}
+.main-content .Face-Dectection .all-bottom button:nth-child(2) {
+  background-color: #2563EB;
+}
+.main-content .Face-Dectection .all-bottom button:active {
+  scale: 0.9;
+}
+
+.song-card {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  padding: 18px;
+  align-items: center;
+}
+
+.song-poster {
+  width: 180px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+}
+
+.song-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.song-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.song-header h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.song-artist {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.expression-tag {
+  padding: 8px 14px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #111827;
+}
+
+.expression-tag.happy {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.expression-tag.surprise {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.expression-tag.angry {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.expression-tag.sad {
+  background: #e0f2fe;
+  color: #0c4a6e;
+}
+
+.expression-tag.neutral {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.song-description {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.song-audio {
+  width: 100%;
+  max-width: 520px;
+  outline: none;
+}
+
+.song-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.song-mood {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .song-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+  .song-poster {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
+  .song-audio {
+    max-width: 100%;
+  }
+  .song-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .home-page {
+    padding: 16px;
+    height: auto;
+  }
+  .top-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .top-section button {
+    width: 100%;
+  }
+  .Face-Dectection h2 {
+    font-size: 1rem;
+  }
+  .Face-Dectection h2 span {
+    font-size: 0.8rem;
+  }
+  .all-bottom {
+    flex-direction: column;
+    width: 100%;
+  }
+  .all-bottom button {
+    width: 100%;
+  }
+  .song-card {
+    border-radius: 16px;
+  }
+  .song-info {
+    gap: 12px;
+  }
+  .song-header h3 {
+    font-size: 1rem;
+  }
+  .song-artist {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=Home.css.map */

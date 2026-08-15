@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Landing.scss";
+import useLanding from "./hooks/landing.hook.js";
 
 export default function LandingPage() {
   const navigate = useNavigate();
+
+  useLanding();
 
   return (
     <div className="landing">

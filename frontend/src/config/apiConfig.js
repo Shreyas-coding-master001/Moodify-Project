@@ -1,1 +1,2 @@
 export const API_URL = import.meta.env.VITE_API_URL?.replace(/\/$/, "") || "http://localhost:3000/api";
+export const API_URL_0 = import.meta.env.VITE_API_URL0?.replace(/\/$/, "") || "http://localhost:3000";

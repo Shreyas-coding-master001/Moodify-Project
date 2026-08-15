@@ -66,6 +66,8 @@ export function AuthContextProvider({ children }) {
         }
     };
 
+    const initalServerRequest = async () => {};
+
     return( 
         <authContext.Provider value={{ registerUser, loginUser, getUserData, logoutUser, loading, Protectedloading, data }}>
             { children }

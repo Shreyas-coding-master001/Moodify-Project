@@ -20,7 +20,7 @@ const Register = () => {
     function handleSubmit(e) {
         e.preventDefault();
         const registered = registerUser(formData);
-        if(registered) navigate("home");
+        if(registered) navigate("/home");
     } 
 
     function handleChange(e) {
